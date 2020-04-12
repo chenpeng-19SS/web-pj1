@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浏览页</title>
+    <link href="../css/browse.css" rel="stylesheet" type="text/css">
+    <script src="../js/browse.js"></script>
+</head>
+<body>
+<header id="head">
+    <nav>
+        <h3><a href="../../index.html">
+            <img src="../../images/icons/logo.png" class="logo">
+        </a>
+            <div class="div-left">
+                <a href="../../index.html" class="link">首页</a>
+                <a href="browse.html" class="link" style="color:#7693AD">浏览页</a>
+                <a href="search.html" class="link">搜索页</a>
+            </div>
+        </h3>
+    </nav>
+    <div class="div-right">
+        <h3>
+            <ul id="main">
+                <li>个人中心
+                    <ul class="drop">
+                        <div>
+                            <li><a href="upload.html">上传</a></li>
+                            <li><a href="myphoto.html">我的照片</a></li>
+                            <li><a href="favor.html">我的收藏</a></li>
+                            <li><a href="login.html">登入</a></li>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </h3>
+    </div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="main-info">
+    <div class="main-left">
+        <div class="search-area">
+            <h4 class="search-title">标题搜索</h4>
+            <div class="search-line">
+                <form>
+                    <input type="text" id="search-text">
+                    <input type="submit" id="search-submit" onclick="display_alert()">
+                </form>
+            </div>
+        </div>
+        <div class="hot-content">
+            <h4 class="search-title">热门内容快速浏览</h4>
+            <div class="search-line">
+                <p><a onclick="display_alert()">中国</a></p>
+                <p><a onclick="display_alert()">上海</a></p>
+                <p><a onclick="display_alert()">苏州</a></p>
+                <p><a onclick="display_alert()">日本</a></p>
+                <p><a onclick="display_alert()">澳大利亚</a></p>
+                <p><a onclick="display_alert()">平安京</a></p>
+            </div>
+        </div>
+        <div class="hot-content">
+            <h4 class="search-title">热门国家快速浏览</h4>
+            <div class="search-line">
+                <p><a onclick="display_alert()">中国</a></p>
+                <p><a onclick="display_alert()">日本</a></p>
+                <p><a onclick="display_alert()">澳大利亚</a></p>
+            </div>
+        </div>
+        <div class="hot-content">
+            <h4 class="search-title">热门城市快速浏览</h4>
+            <div class="search-line">
+                <p><a onclick="display_alert()">上海</a></p>
+                <p><a onclick="display_alert()">平安京</a></p>
+                <p><a onclick="display_alert()">苏州</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-right">
+        <div class="filter">
+            <h4 class="search-title">筛选</h4>
+            <div class="filter-select">
+                <form name="form1" method="post" action="">
+                    <select class="select">
+                        <option value="title">内容</option>
+                        <option value="title1">山水</option>
+                        <option value="title2">建筑</option>
+                        <option value="title3">虚拟</option>
+                    </select>
+                    <select name="country" class="select" onChange="set_city(this, this.form.city);">
+                        <option value="0">国家</option>
+                        <option value="China">中国</option>
+                        <option value="Japan">日本</option>
+                        <option value="Italy">澳大利亚</option>
+                        <option value="America">美国</option>
+                    </select>
+                    <select name="city" class="select" id="citys">
+                        <option value="0">选择城市</option>
+                        <option value="Shanghai">上海</option>
+                        <option value="Pinganjing">平安京</option>
+                        <option value="Suzhou">苏州</option>
+                    </select>
+                    <input type="submit" class="select-button" value="筛选" onclick="display_alert()">
+                </form>
+            </div>
+            <div class="filter-show">
+                <a href="details.html">
+                    <div class="list-image1">
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="list-image2">
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="list-image3">
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="list-image4">
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="list-image5">
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="list-image6">
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="list-image7">
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="list-image8">
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="list-image9">
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="list-image10">
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="list-image11">
+                    </div>
+                </a>
+                <a href="details.html">
+                    <div class="list-image12">
+                    </div>
+                </a>
+                <div class="pages">
+                    <a class="page">1</a>
+                    <a class="page">2</a>
+                    <a class="page">3</a>
+                    <a class="page">4</a>
+                    <a class="page">5</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+</footer>
+</body>
+</html>
